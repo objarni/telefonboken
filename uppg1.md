@@ -25,9 +25,9 @@ Varje namn+telefonnummer är separerade med semikolen, och avslutade med nyrad (
 Observera att alla namn står med små bokstäver i filen. Alla uppslag sker mot
 strängar som består av enbart små bokstäver.
 
-**Tips 1** Använd for-loop mot open("bok.txt"), samt dictionary datastruktur.
+**Tips 1** Använd for-loop mot open("bok.txt"), samt datastrukturen dictionary.
 
-Dictionary används så här:
+Dictionaries används så här:
 
     >>> d = {}
     >>> d["abc"] = 5
