@@ -4,9 +4,9 @@ Telefonboken - lite större Pythonövning
 Uppgift 3
 ---------
 
-__Strukturera om programmet från uppgift 2 till objekt.__
+_Strukturera om programmet från uppgift 2 till objekt._
 
-OK, så nu kommer vi till klasser (keyword: class) eller,
+OK, så nu kommer vi till klasser (keyword: `class`) eller,
 som jag föredrar att tänka på dem, objekt.
 
 Lite bakgrund: på 90-talet kom det en stor trend inom
@@ -25,7 +25,7 @@ Så vad betyder då objekt/klasser? Tja mycket enkelt sagt är
 bara objekt "säckar" där man kan lägga variabler och funktioner.
 Kanske tänker du "men är inte det precis som dictionaries"? och
 då tänker du ganska rätt. En skillnaden är att objekt har en
-bekvämare syntax där man slipper hakparenteser [] och fnuttar "".
+bekvämare syntax där man slipper hakparenteser `[]` och fnuttar `""`.
 
     # Dictionary
     d = {}
@@ -38,13 +38,14 @@ bekvämare syntax där man slipper hakparenteser [] och fnuttar "".
 
 En annan skillnad är att objekt har saker i sig från början,
 medan dictionaries är tomma. Det som avgör vad som finns i objektet
-från början är MyClass()-anropet ovan, det som kallas "konstruktorn"
+från början är `MyClass()`-anropet ovan, det som kallas "konstruktorn"
 i OOP-sammanhang. "Konstruktorn" (constructor) "konstruerar" eller
-bygger upp objektets initiala tillstånd.
+bygger upp objektets initialtillstånd.
 
-Konstruktorer i Python har alltid namnet "__init__", men när man
-anropar dem använder man klassnamnet, som MyClass(). MyClass()
-innebär alltså ett anrop ett klassen MyClass __init__-metod:
+Konstruktorer i Python har alltid namnet `__init__`, men när man
+anropar den använder man klassnamnet, som `MyClass()`. `MyClass()`
+innebär alltså ett anrop till `__init__`-metoden som ligger i
+klassen med namnet `MyClass`:
 
     class MyClass(object):
         def __init__(self):
@@ -54,12 +55,12 @@ innebär alltså ett anrop ett klassen MyClass __init__-metod:
             return a * 2
 
 Om vi tittar tillbaka på min lösning av uppgift 2 ser vi att vi
-namnet "book" är vanligt. Det antyder att det finns ett koncept
+namnet "`book`" är vanligt. Det antyder att det finns ett koncept
 som vill födas där... En idé är att helt enkelt bygga en klass
-som heter "PhoneBook", som kan göra det vi vill att den ska göra
+som heter "`PhoneBook`", som kan göra det vi vill att den ska göra
 (ladda, spara, slå upp namn, lägga till namn, ...).
 
-Så här skulle det kunna se ut att använda klassen interaktivt:
+Så här skulle det se ut att använda klassen interaktivt:
 
     >>> book = PhoneBook("bok.txt"):
     >>> book.add_number("39393939", "Bob Dylan")
@@ -72,7 +73,7 @@ Laddning- och sparning kan ske "automatiskt" i konstruktorn,
 och när man lägger till nya telefonnummer. Kort och koncist,
 och lite som att uppfinna ett "språk" för programmet, eller hur?
 
-Så här ser skelettet för klassen PhoneBook ut:
+Så här ser skelettet för klassen `PhoneBook` ut:
 
     class PhoneBook(object):
         def __init__(self, bookpath):
@@ -87,4 +88,11 @@ Så här ser skelettet för klassen PhoneBook ut:
         def count_numbers(self):
             pass
 
-Din uppgift blir att fylla på med kött runt benen!
+Notera keyword `pass`, som betyder "gör ingenting" i Python.
+Bra för att fylla i funktioner som inte är implementerade ännu.
+
+Din uppgift blir att fylla i funktionerna och skriva om loopen
+från uppgift 2 till att använda en PhoneBook istället för en
+dictionary!
+
+
