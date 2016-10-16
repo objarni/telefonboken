@@ -24,8 +24,9 @@ men skyr det inte som elden.
 Så vad betyder då objekt/klasser? Tja mycket enkelt sagt är
 bara objekt "säckar" där man kan lägga variabler och funktioner.
 Kanske tänker du "men är inte det precis som dictionaries"? och
-då tänker du ganska rätt. En skillnaden är att objekt har en
-bekvämare syntax där man slipper hakparenteser `[]` och fnuttar `""`.
+då tänker du ganska rätt. En skillnad är att objekt har en
+bekvämare syntax där man slipper hakparenteser `[]` och
+fnuttar `""`:
 
     # Dictionary
     d = {}
@@ -39,11 +40,11 @@ bekvämare syntax där man slipper hakparenteser `[]` och fnuttar `""`.
 En annan skillnad är att objekt har saker i sig från början,
 medan dictionaries är tomma. Det som avgör vad som finns i objektet
 från början är `MyClass()`-anropet ovan, det som kallas "konstruktorn"
-i OOP-sammanhang. "Konstruktorn" (constructor) "konstruerar" eller
-bygger upp objektets initialtillstånd.
+i OOP-sammanhang. "Konstruktorn" (constructor) "konstruerar", eller
+bygger upp, objektets initiala tillstånd.
 
 Konstruktorer i Python har alltid namnet `__init__`, men när man
-anropar den använder man klassnamnet, som `MyClass()`. `MyClass()`
+anropar dem använder man klassnamnet, som `MyClass()`. `MyClass()`
 innebär alltså ett anrop till `__init__`-metoden som ligger i
 klassen med namnet `MyClass`:
 
@@ -91,8 +92,6 @@ Så här ser skelettet för klassen `PhoneBook` ut:
 Notera keyword `pass`, som betyder "gör ingenting" i Python.
 Bra för att fylla i funktioner som inte är implementerade ännu.
 
-Din uppgift blir att fylla i funktionerna och skriva om loopen
+Din uppgift blir att fylla i funktionerna samt att skriva om loopen
 från uppgift 2 till att använda en PhoneBook istället för en
-dictionary!
-
-
+dictionary.
