@@ -40,10 +40,10 @@ En annan skillnad är att objekt har saker i sig från början,
 medan dictionaries är tomma. Det som avgör vad som finns i objektet
 från början är MyClass()-anropet ovan, det som kallas "konstruktorn"
 i OOP-sammanhang. "Konstruktorn" (constructor) "konstruerar" eller
-bygger upp objektets initialtillstånd.
+bygger upp objektets initiala tillstånd.
 
 Konstruktorer i Python har alltid namnet "__init__", men när man
-anropar den använder man klassnamnet, som MyClass(). MyClass()
+anropar dem använder man klassnamnet, som MyClass(). MyClass()
 innebär alltså ett anrop ett klassen MyClass __init__-metod:
 
     class MyClass(object):
@@ -53,14 +53,13 @@ innebär alltså ett anrop ett klassen MyClass __init__-metod:
         def double(self, a):
             return a * 2
 
-
 Om vi tittar tillbaka på min lösning av uppgift 2 ser vi att vi
 namnet "book" är vanligt. Det antyder att det finns ett koncept
 som vill födas där... En idé är att helt enkelt bygga en klass
 som heter "PhoneBook", som kan göra det vi vill att den ska göra
 (ladda, spara, slå upp namn, lägga till namn, ...).
 
-Så här skulle det se ut att använda klassen interaktivt:
+Så här skulle det kunna se ut att använda klassen interaktivt:
 
     >>> book = PhoneBook("bok.txt"):
     >>> book.add_number("39393939", "Bob Dylan")
