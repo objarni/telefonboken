@@ -55,11 +55,11 @@ klassen med namnet `MyClass`:
         def double(self, a):
             return a * 2
 
-Om vi tittar tillbaka på min lösning av uppgift 2 ser vi att vi
-namnet "`book`" är vanligt. Det antyder att det finns ett koncept
-som vill födas där... En idé är att helt enkelt bygga en klass
-som heter "`PhoneBook`", som kan göra det vi vill att den ska göra
-(ladda, spara, slå upp namn, lägga till namn, ...).
+Om vi tittar tillbaka på min lösning av uppgift 2 ser vi att namnet
+"`book`" är vanligt. Det antyder att det finns ett koncept som vill
+födas där... En idé är att helt enkelt bygga en klass som heter
+"`PhoneBook`", som kan göra det vi vill att den ska göra (ladda,
+spara, slå upp namn, lägga till namn, ...).
 
 Så här skulle det se ut att använda klassen interaktivt:
 
